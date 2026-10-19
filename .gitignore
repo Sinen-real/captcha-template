@@ -1,0 +1,30 @@
+# 字体源文件体积大，不进版本库（子集产物在 fonts/ 里）
+GNU Unifont/
+*.7z
+
+# 构建产物与测试截图
+dist/
+tool.zip
+tools/*.png
+_s/
+
+# 开发过程中的截图 / 一次性调试产物：只在本地，不进版本库
+/*.png
+/*.PNG
+/*.jpg
+/*.jpeg
+
+# 早期的一次性文件：已从版本库移除，只留本地
+/PROGRESS.md
+/nar.html
+/scene_b64.txt
+/tools/_mob.js
+/tools/analyze.js
+/tools/crop.js
+/tools/debug.js
+/tools/mkimg.js
+/tools/probe.js
+/tools/shot.js
+
+# 打包专用的 skill 与产物：只在本地
+.claude/skills/minitool-zip-builder/
